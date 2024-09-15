@@ -22,7 +22,7 @@ jobs:
 
     - name: Mirror to Azure DevOps
       run: |
-        git remote add azure https://$(AZURE_DEVOPS_PAT)@dev.azure.com/yourorganization/YourProject/_git/YourRepo
+        git remote add azure https://$(AZURE_DEVOPS_PAT)@dev.azure.com/devally/devally/_git/devally
         git fetch azure
         git push azure main --force
       env:
